@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<!-- Name: Priyanshu Rathore | Roll No: 2510303398 | Assignment 15 -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mobile First</title>
+  <style>
+    .card {
+      border: 2px solid #333;
+      border-radius: 8px;
+      padding: 16px;
+      margin-bottom: 12px;
+    }
+    @media (min-width: 600px) {
+      .cards {
+        display: flex;
+        gap: 16px;
+      }
+      .card {
+        flex: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="cards">
+    <div class="card">
+      <h2>Card One</h2>
+      <p>This is the first card.</p>
+    </div>
+    <div class="card">
+      <h2>Card Two</h2>
+      <p>This is the second card.</p>
+    </div>
+  </div>
+</body>
+</html>

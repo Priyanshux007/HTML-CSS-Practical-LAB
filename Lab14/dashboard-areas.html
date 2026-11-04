@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<!-- Name: Priyanshu Rathore | Roll No: 2510303398 | Assignment 14 -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard</title>
+  <style>
+    .dashboard {
+      display: grid;
+      grid-template-columns: 200px 1fr;
+      grid-template-areas:
+        "header header"
+        "sidebar main"
+        "footer footer";
+      gap: 10px;
+      min-height: 400px;
+    }
+    .dashboard div {
+      border: 2px solid #333;
+      padding: 16px;
+    }
+    .header  { grid-area: header;  background-color: #cfe8ff; }
+    .sidebar { grid-area: sidebar; background-color: #ffe3b3; }
+    .main    { grid-area: main;    background-color: #d8f5d0; }
+    .footer  { grid-area: footer;  background-color: #f5d0d0; }
+  </style>
+</head>
+<body>
+  <div class="dashboard">
+    <div class="header">Header</div>
+    <div class="sidebar">Sidebar</div>
+    <div class="main">Main area</div>
+    <div class="footer">Footer</div>
+  </div>
+</body>
+</html>
